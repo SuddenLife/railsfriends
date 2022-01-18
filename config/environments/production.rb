@@ -92,6 +92,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Used for password recovery. Replace 'localhost' with webhost
-  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'http://railsfriendapp2.herokuapp.com/', port: 3000 }
 
 end
