@@ -1,0 +1,16 @@
+<div class="container-fluid bg-light text-dark p-5 border border-5 border-dark">
+    <div class="container  p-5">
+        <h1 class="display-4"><%= friend.first_name + " " + friend.last_name %></h1>
+        <hr>
+        <p><%= friend.email + " | " + friend.phone + " | " + friend.twitter%></p>
+        <div>
+          <%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-secondary text-light" %> |
+          <%= link_to "Back", friends_path, class:"btn btn-dark text-light" %>
+          <br/>
+        </div>
+        <br/>
+        <div>
+          <%= button_to "Delete", @friend, data: { confirm: "Are you sure?" }, method: :delete, class:"btn btn-danger" %>
+        </div>
+    </div>
+</div>
